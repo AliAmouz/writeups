@@ -3,9 +3,15 @@
 
 **Platform:** TryHackMe  
 **Difficulty:** Medium  
+<<<<<<< HEAD
 **Date Completed:** August , 2022  
 **Author:** Ali Amouz  
 **Room Link:** [TryHackMe: b3dr0ck](https://tryhackme.com/room/b3dr0ck)
+=======
+**Date Completed:** August 2, 2025  
+**Author:** Ali Amouz
+
+>>>>>>> 903117240137412cad036ac94566e3ff37446da4
 
 ---
 
@@ -79,4 +85,8 @@ Retrieved `root.txt`.
 ---
 
 > _“This box was a great mix of enumeration, encoding logic, and privilege escalation. The double base64 trick and sudo abuse made it especially satisfying.”_
+<<<<<<< HEAD
 ```
+=======
+
+>>>>>>> 903117240137412cad036ac94566e3ff37446da4
