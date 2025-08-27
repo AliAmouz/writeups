@@ -1,8 +1,4 @@
-Got it, Ali. Let’s clean it up properly. Here's a fully structured, Markdown-compliant version of your **b3dr0ck (TryHackMe)** writeup—no formatting glitches, no broken flow:
 
----
-
-```markdown
 # 🧱 b3dr0ck — TryHackMe Writeup
 
 **Platform:** TryHackMe  
