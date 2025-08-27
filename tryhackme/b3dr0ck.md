@@ -1,14 +1,10 @@
-Got it, Ali. Let’s clean it up properly. Here's a fully structured, Markdown-compliant version of your **b3dr0ck (TryHackMe)** writeup—no formatting glitches, no broken flow:
 
----
-
-```markdown
 # 🧱 b3dr0ck — TryHackMe Writeup
 
 **Platform:** TryHackMe  
 **Difficulty:** Medium  
-**Date Completed:** August 26, 2022  
-**Author:** stray0x1  
+**Date Completed:** August , 2022  
+**Author:** Ali Amouz  
 **Room Link:** [TryHackMe: b3dr0ck](https://tryhackme.com/room/b3dr0ck)
 
 ---
@@ -84,7 +80,3 @@ Retrieved `root.txt`.
 
 > _“This box was a great mix of enumeration, encoding logic, and privilege escalation. The double base64 trick and sudo abuse made it especially satisfying.”_
 ```
-
----
-
-This version is clean, readable, and ready to drop into your GitHub repo or portfolio. Want me to help you build a template so you can generate these automatically from structured notes? Or format another writeup next?
