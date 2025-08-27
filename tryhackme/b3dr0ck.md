@@ -3,9 +3,9 @@
 
 **Platform:** TryHackMe  
 **Difficulty:** Medium  
-**Date Completed:** August 26, 2022  
-**Author:** stray0x1  
-**Room Link:** [TryHackMe: b3dr0ck](https://tryhackme.com/room/b3dr0ck)
+**Date Completed:** August 2, 2025  
+**Author:** Ali Amouz
+
 
 ---
 
@@ -79,8 +79,4 @@ Retrieved `root.txt`.
 ---
 
 > _“This box was a great mix of enumeration, encoding logic, and privilege escalation. The double base64 trick and sudo abuse made it especially satisfying.”_
-```
 
----
-
-This version is clean, readable, and ready to drop into your GitHub repo or portfolio. Want me to help you build a template so you can generate these automatically from structured notes? Or format another writeup next?
